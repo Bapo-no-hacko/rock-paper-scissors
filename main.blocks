@@ -1,0 +1,37 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="5(X$@E];uUqaH7RnDyo(">A</variable><variable id=")()IOnX,i^Jk4kHF{Wxt">Hand</variable><variable id="x0!rATu0cnsHB2:invG[">Score A</variable><variable id=",2S10?iLw[b$^=DR,MT7">Score B</variable></variables><block type="device_gesture_event" id="B}Y(QEGLXH[9eWfz{NM3" x="3" y="-133"><field name="NAME">Gesture.Shake</field><statement name="HANDLER"><block type="variables_set" id="}X!*fXbQ^;nMB7YQ#%vf"><field name="VAR" id=")()IOnX,i^Jk4kHF{Wxt">Hand</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="device_random" id="/~%0rQ7yISTJ~D3}4~4w"><value name="min"><shadow type="math_number" id="e`%GgGsxPo8!U-_!Tly-"><field name="NUM">0</field></shadow></value><value name="limit"><shadow type="math_number" id="NFDa]KyN2JCn=7:3Qg{-"><field name="NUM">3</field></shadow></value></block></value><next><block type="controls_if" id="s._9`;hQ=Z/ufseExUC6"><mutation elseif="1" else="1"/><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="logic_compare" id="z(VEDZrcU*,u4)J^(y,3"><field name="OP">EQ</field><value name="A"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="variables_get" id=":$8e(SA;h0[ox[IH#/E8"><field name="VAR" id=")()IOnX,i^Jk4kHF{Wxt">Hand</field></block></value><value name="B"><shadow type="math_number" id=";0xQD5,J]=0lBNn?:4lZ"><field name="NUM">1</field></shadow></value></block></value><statement name="DO0"><block type="device_show_leds" id="h{0-,v9bzkIRsQx)sD8+"><field name="LEDS">`
+        . . . . . 
+        . . . . . 
+        . . . . . 
+        . . . . . 
+        . . . . .
+        `</field><next><block type="device_show_leds" id=",M9nn;7@/=J{+n}Vk,;{"><field name="LEDS">`
+        # # # # # 
+        # . . . # 
+        # . . . # 
+        # . . . # 
+        # # # # #
+        `</field></block></next></block></statement><value name="IF1"><block type="logic_compare" id="}~+iYp4Pp2{/k%P?m-N5"><field name="OP">EQ</field><value name="A"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="variables_get" id="6GT]ffJ9yMy{k`qP8dX2"><field name="VAR" id=")()IOnX,i^Jk4kHF{Wxt">Hand</field></block></value><value name="B"><shadow type="math_number" id="*5jlN}M|Db?(?PlwSSTT"><field name="NUM">2</field></shadow></value></block></value><statement name="DO1"><block type="device_show_leds" id=";!lye/wnxd4;Wl(Kk9Ry"><field name="LEDS">`
+        . . . . . 
+        . . . . . 
+        . . . . . 
+        . . . . . 
+        . . . . .
+        `</field><next><block type="device_show_leds" id="PY^iI!36%U@~JQfgv)(C"><field name="LEDS">`
+        . . . . . 
+        . # # # . 
+        . # # # . 
+        . # # # . 
+        . . . . .
+        `</field></block></next></block></statement><statement name="ELSE"><block type="device_show_leds" id="j-+Z=/zc`sV(SM7yD`c`"><field name="LEDS">`
+        . . . . . 
+        . . . . . 
+        . . . . . 
+        . . . . . 
+        . . . . .
+        `</field><next><block type="device_show_leds" id="_4;iH6~9C}GfD4;94X]L"><field name="LEDS">`
+        # # . . # 
+        # # . # . 
+        . . # . . 
+        # # . # . 
+        # # . . #
+        `</field></block></next></block></statement></block></next></block></statement></block><block type="device_button_event" id="oSE)~aGp)!#Dn#*KDy!A" x="566" y="-110"><field name="NAME">Button.B</field><statement name="HANDLER"><block type="variables_change" id="q|-eZ6V6VW9|u}A2w./;"><field name="VAR" id=",2S10?iLw[b$^=DR,MT7">Score B</field><value name="VALUE"><shadow type="math_number" id="6mrJO`(RT*g=v2%B#1eD"><field name="NUM">1</field></shadow></value><next><block type="controls_if" id="N,7Nw{9YQE7?JC.|b]Bw"><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="logic_compare" id="OW{tO@@DwEI]twPw#]k8"><field name="OP">EQ</field><value name="A"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="variables_get" id="@5FO8YM4r=ShoKqu8oM_"><field name="VAR" id=",2S10?iLw[b$^=DR,MT7">Score B</field></block></value><value name="B"><shadow type="math_number" id="cxry*cJ:k4d/Aj-303+/"><field name="NUM">3</field></shadow></value></block></value><statement name="DO0"><block type="device_print_message" id="4l?kGn)}6YGJ~cJ3MVUz"><value name="text"><shadow type="text" id="W*#M_HmM,TL[0X`bP,T{"><field name="TEXT">Player B won</field></shadow></value><next><block type="variables_set" id="hXfJ-zLu:%V6BFRFI6Rr"><field name="VAR" id=",2S10?iLw[b$^=DR,MT7">Score B</field><value name="VALUE"><shadow type="math_number" id="Gj6S~;O^l}b8v_!Ewll:"><field name="NUM">0</field></shadow></value></block></next></block></statement></block></next></block></statement></block><block type="device_button_event" id="-DeGUC{~A[x*..m-03k^" x="247" y="82"><field name="NAME">Button.A</field><statement name="HANDLER"><block type="variables_change" id=".U:H(dul`XtK:mZXIQY`"><field name="VAR" id="x0!rATu0cnsHB2:invG[">Score A</field><value name="VALUE"><shadow type="math_number" id=";45IA[A{]G17F_O}wAIS"><field name="NUM">1</field></shadow></value><next><block type="controls_if" id="QkR`5=-_on4`s+(;JJAb"><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="logic_compare" id="P)NMiboQBxN;S`meKB4."><field name="OP">EQ</field><value name="A"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="variables_get" id="4e8MVg[b-#Pt}cOjwB[O"><field name="VAR" id="x0!rATu0cnsHB2:invG[">Score A</field></block></value><value name="B"><shadow type="math_number" id="EXHi5H;5CN5/Ta?tr)*B"><field name="NUM">3</field></shadow></value></block></value><statement name="DO0"><block type="device_print_message" id="33D?Hc)Fx2uS~If:b^ob"><value name="text"><shadow type="text" id="U8LYKo}UrQtP)9#o9J=6"><field name="TEXT">Player A won</field></shadow></value><next><block type="variables_set" id="solkTQx.[W#7Fb|Tv{iR"><field name="VAR" id="x0!rATu0cnsHB2:invG[">Score A</field><value name="VALUE"><shadow type="math_number" id="ts8lU(Fp~_htb2Gn6trp"><field name="NUM">0</field></shadow></value></block></next></block></statement></block></next></block></statement></block></xml>
